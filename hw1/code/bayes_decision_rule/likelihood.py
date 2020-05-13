@@ -14,6 +14,8 @@ def likelihood(x):
     #TODO
 
     # begin answer
+    for i in range(0, len(x)):
+        l[i] = x[i] / x.sum(axis=1)[i]
     # end answer
 
     return l
