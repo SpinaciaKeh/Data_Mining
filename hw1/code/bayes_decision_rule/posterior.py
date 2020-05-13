@@ -16,6 +16,19 @@ def posterior(x):
     #TODO
 
     # begin answer
+    prior = np.zeros((C, 1))
+    for i in range(0, C):
+        prior[i] = x.sum(axis=1)[i] / total
+
+    px = np.zeros((1, N))
+    for j in range(0, N):
+        for i in range(0, C):
+                px[0][j] += prior[i] * l[i][j]
+
+    for j in range(0, N):
+        for i in range(0, C):
+                p[i][j] = l[i][j] * prior[i] / px[0][j]
+
     # end answer
     
     return p
