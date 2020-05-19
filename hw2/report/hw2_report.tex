@@ -1,0 +1,248 @@
+%
+% 6.006 problem set 5
+%
+\documentclass[12pt,twoside]{article}
+
+\input{macros}
+
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{mdwlist}
+\usepackage{graphicx}
+\usepackage{clrscode3e}
+\newcommand{\isnotequal}{\mathrel{\scalebox{0.8}[1]{!}\hspace*{1pt}\scalebox{0.8}[1]{=}}}
+\usepackage{listings}
+\usepackage{tikz}
+\usepackage{float}
+\usetikzlibrary{arrows}
+\usetikzlibrary{matrix}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{shapes.misc}
+\usetikzlibrary{trees}
+
+\usepackage{hyperref}
+\usepackage[all]{hypcap}
+\usepackage{caption}
+\captionsetup{hypcap=true}
+
+\newcommand{\answer}{
+ \par\medskip
+ \textbf{Answer:}
+}
+
+\newcommand{\collaborators}{ \textbf{Collaborators:}
+%%% COLLABORATORS START %%%
+
+\tabT Name: xxx
+
+\tabT Student ID: xxxxxxxx
+%%% COLLABORATORS END %%%
+}
+
+\newcommand{\answerIa}{ \answer
+%%% PROBLEM 1(a) ANSWER START %%%
+\begin{enumerate}
+	\item 
+	\item 
+	\item
+
+\end{enumerate}
+
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[scale=0.7]{figure2}
+%	\caption{The plotting result for perceptron when nTrain = 100.}
+%	\label{figure2}
+%\end{figure}
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[scale=0.7]{figure3}
+%	\caption{The plotting result for perceptron when training data is not linearly seperable.}
+%	\label{figure3}
+%\end{figure}
+%%% PROBLEM 1(a) ANSWER END %%%
+}
+
+\newcommand{\answerIb}{ \answer
+%%% PROBLEM 1(b) ANSWER START %%%
+\begin{enumerate}
+	\item
+	\item 
+	\item 
+	\item 
+	
+\end{enumerate}
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[scale=0.7]{figure4}
+%	\caption{The plotting result for linear regression.}
+%	\label{figure4}
+%\end{figure}
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[scale=0.7]{figure5}
+%	\caption{The plotting result for linear regression when training data is not linearly seperable.}
+%	\label{figure5}
+%\end{figure}
+%%% PROBLEM 1(b) ANSWER END %%%
+}
+
+\newcommand{\answerIc}{ \answer
+	%%% PROBLEM 1(c) ANSWER START %%%
+	\begin{enumerate}
+		\item 
+		\item	
+	\end{enumerate}
+%	\begin{figure}[H]
+%		\centering
+%		\includegraphics[scale=0.7]{figure6}
+%		\caption{The plotting result for logistic regression.}
+%		\label{figure6}
+%	\end{figure}
+%	\begin{figure}[H]
+%		\centering
+%		\includegraphics[scale=0.7]{figure7}
+%		\caption{The plotting result for logistic regression when training data is not linearly seperable.}
+%		\label{figure7}
+%	\end{figure}
+	%%% PROBLEM 1(c) ANSWER END %%%
+}
+
+\newcommand{\answerId}{ \answer
+	%%% PROBLEM 1(d) ANSWER START %%%
+	\begin{enumerate}
+		\item
+		\item 
+		\item
+	\end{enumerate}
+
+%	\begin{figure}
+%		\centering
+%		\includegraphics[scale=0.7]{figure9}
+%		\caption{The plotting result for SVM when nTrain is 100.}
+%		\label{figure9}
+%	\end{figure}
+	%%% PROBLEM 1(d) ANSWER END %%%
+}
+
+\newcommand{\answerIIa}{ \answer
+%%% PROBLEM 2(a) ANSWER START %%%
+
+\begin{enumerate}
+	\item 
+	\item 
+	\item 
+\end{enumerate}
+%%% PROBLEM 2(a) ANSWER END %%%
+}
+
+
+\newcommand{\answerIIb}{ \answer
+%%% PROBLEM 2(b) ANSWER START %%%
+
+%%% PROBLEM 2(b) ANSWER END %%%
+}
+
+
+
+\newcommand{\answerIIIa}{ \answer 
+%%% PROBLEM 3(a) ANSWER START %%%
+\begin{enumerate}
+	\item 
+	\item 
+	\item 
+	\item 
+	\item
+\end{enumerate}
+%%% PROBLEM 3(a) ANSWER END %%%
+
+}
+
+
+\setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{0pt}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{0in}
+\setlength{\textheight}{8.5in}
+
+% Fill these in!
+\newcommand{\theproblemsetnum}{2}
+\newcommand{\releasedate}{May 9, 2019}
+\newcommand{\partaduedate}{Monsday, May 25}
+\newcommand{\tabUnit}{3ex}
+\newcommand{\tabT}{\hspace*{\tabUnit}}
+
+\begin{document}
+
+\handout{Homework \theproblemsetnum}{\releasedate}
+
+%\textbf{Both theory and programming questions} are due {\bf \partaduedate} at
+%{\bf 11:59PM}.
+%
+\collaborators
+%Please download the .zip archive for this problem set, and refer to the
+%\texttt{README.txt} file for instructions on preparing your solutions.
+%
+%We will provide the solutions to the problem set 10 hours after the problem set
+%is due. You will have to read the solutions, and write a brief \textbf{grading
+%explanation} to help your grader understand your write-up. You will need to
+%submit the grading explanation by \textbf{Thursday, November 3rd, 11:59PM}. Your
+%grade will be based on both your solutions and the grading explanation.
+
+\medskip
+
+\hrulefill
+
+\begin{problems}
+
+\problem \textbf{A Walk Through Linear Models}
+\begin{problemparts}
+\problempart Perceptron
+\answerIa
+
+
+\problempart Linear Regression
+\answerIb
+
+\problempart Logistic Regression
+
+\answerIc
+
+
+\problempart Support Vector Machine
+\answerId
+
+
+\end{problemparts}
+\newpage
+
+\problem \textbf{Regularization and Cross-Validation}
+\begin{problemparts}
+\problempart
+Implement Ridge Regrssion, and use LOOCV to tune the regularization parameter $\lambda$.
+
+
+\answerIIa
+
+\problempart Implement Logistic Regrssion, and use LOOCV to tune the regularization parameter $\lambda$.
+
+\answerIIb
+
+
+\end{problemparts}
+
+\problem \textbf{Bias Variance Trade-off}
+
+Let's review the bias-variance decomposition first. Now please answer the following questions:
+\begin {problemparts}
+\problempart True of False
+
+\answerIIIa
+
+
+\end{problemparts}
+
+
+\end{problems}
+\end{document}
